@@ -1,27 +1,27 @@
 sudo: false
 language: php
 php:
-  - 7.1
-  - 7.0
-  - nightly
-
+- 7.1
+- 7.0
+- nightly
 matrix:
   fast_finish: true
   allow_failures:
-    - php: nightly
-
+  - php: nightly
 cache:
   apt: true
   directories:
-    - $HOME/.composer/cache
-    - vendor
-
+  - "$HOME/.composer/cache"
+  - vendor
 before_install:
-  - phpenv config-rm xdebug.ini || true
-  - composer self-update
-
+- phpenv config-rm xdebug.ini || true
+- composer self-update
 install:
-  - composer install -o --prefer-dist --no-interaction
-
+- composer install -o --prefer-dist --no-interaction
 script:
-  - composer test
+- composer test
+deploy:
+  provider: heroku
+  api_key:
+    secure: e7vejZk+AIYG4GPRqYM8NNO7lq64ETcRb0JlAGxg8cm8EVDlw/0TjvCL1wu0Okd7hfMWYKDe1efwwrnXjTmsPdUdB9KzHFYcTcrMqJRMCATML+JvR/2E3JnkzA0wCAVyM8jzT9HSgwpR8+Ej2vxk8dxPbu5kivUiw89OAffox4YTklDLvYg+72pUtDEqJ/127dpkx/Bj0uBKSLg6JXAuG6n4hYxwS+TdwQAiXk3bHdiIM992xJl3Gi8tpNULrTRXO3LJgdZXjorb81Iz45DCHqUX2GWQ4vvHyeaRC2UJSX6Yk2zrQiWcapSPzM8z0pL9XVi/3GMP3ZiVbgesuF9jCT6DHqH2XA364KCCAksqr7gQrN+DFG2scehGi8188PWXJ1chZR+e8lxdDu5jcnJCSlWbjrhBtEXZM08Adaq/LZGBlhAC2IgbDQwXGpWrB6QHjSSjOcN18C8Qv4FvgnHbfXNPaho7ROeisBbN/feAjMyKmzdv6RCtBv4PtbQSMqg27FvYNAxEwwAgHOapncQNcUC9keeSxs62NUxJmClfY9q3a7SBnKyLLyNdYhn+2Op8NFPa4blhL71CvN3qj7ZhQjB0918t4EJWRSilLkBTpqL01jxetUeof2rbe2wAMBG7KbZfVt7OqOreW/Gx7CAQ7/ejC2X73gPzeg9NTXHjufo=
+  app: preview-redeninja
