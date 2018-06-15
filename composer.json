@@ -22,6 +22,10 @@
 	{
 		"type": "git",
 		"url": "https://github.com/ForaDoEixo/redeninja.git"
+	},
+	{
+		"type": "git",
+		"url": "https://github.com/foradoeixo/MapasBuilder.git"
 	}
   ],
   "minimum-stability": "stable",
@@ -44,7 +48,8 @@
 	"predis/predis": "1.1.1",
 	"humanmade/s3-uploads": "2.0.0-beta3",
 	"wpackagist-plugin/debug-bar": "0.9",
-	"ForaDoEixo/redeninja": "dev-develop as 1.0.x-dev"
+	"ForaDoEixo/redeninja": "dev-develop as 1.0.x-dev",
+	"ForaDoEixo/MapasBuilder": "dev-master as 1.0.x-dev"
   },
   "require-dev": {
 	"heroku/heroku-buildpack-php": "*",
@@ -64,7 +69,8 @@
 	  ],
 	  "web/app/plugins/{$name}/": [
 		"wpackagist-plugin/all-in-one-seo-pack",
-		"wpackagist-plugin/debug-bar"
+		"wpackagist-plugin/debug-bar",
+		"type:wordpress-plugin"
 	  ],
 	  "web/app/themes/{$name}/": [
 		"type:wordpress-theme"
