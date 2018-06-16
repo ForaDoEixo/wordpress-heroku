@@ -1,0 +1,21 @@
+{
+  "name": "wordpress-heroku",
+  "version": "1.0.0",
+  "description": "Project Information:",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ForaDoEixo/wordpress-heroku.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ForaDoEixo/wordpress-heroku/issues"
+  },
+  "homepage": "https://github.com/ForaDoEixo/wordpress-heroku#readme"
+}

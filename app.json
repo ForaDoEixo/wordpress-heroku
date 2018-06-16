@@ -78,9 +78,12 @@
 	  "plan": "papertrail:choklad"
 	}
   ],
-  "buildpacks": [
-	{
-	  "url": "https://github.com/heroku/heroku-buildpack-php"
-	}
-  ]
+	"buildpacks": [
+		{
+				"url": "heroku/nodejs"
+		},
+		{
+				"url": "heroku/php"
+		}
+	]
 }
