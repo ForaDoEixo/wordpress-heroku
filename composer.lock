@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7f36b719b019bd9a43ec2a1ec3ce855e",
+    "content-hash": "15c5fe27e992a200b9e4673a6aee03c2",
     "packages": [
         {
             "name": "ForaDoEixo/MapasBuilder",
@@ -12,13 +12,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/foradoeixo/MapasBuilder.git",
-                "reference": "f54460fbe50a927c2e09e01cc1623be6381ed58f"
+                "reference": "479209a19a8d893a04d15b6f6f595a2fc00a7979"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "time": "2018-06-15T21:41:09+00:00"
+            "scripts": {
+                "post-package-install": [
+                    "npm i",
+                    "./node_modules/.bin/bower install"
+                ]
+            },
+            "description": "Plugin WordPress que habilita um shortcode para buscar informações da API do **MapasCulturais**, e insere um módulo adicional ao Divi Builder, que permite configurar esse shortcode",
+            "time": "2018-06-16T15:38:16+00:00"
         },
         {
             "name": "ForaDoEixo/redeninja",
