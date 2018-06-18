@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/foradoeixo/MapasBuilder.git",
-                "reference": "65c61a7757b60c073dbaef40acc51cb1eec0b571"
+                "reference": "efd2bd9d2280ced54823006535477f572bca8c9c"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -25,7 +25,7 @@
                 ]
             },
             "description": "Plugin WordPress que habilita um shortcode para buscar informações da API do **MapasCulturais**, e insere um módulo adicional ao Divi Builder, que permite configurar esse shortcode",
-            "time": "2018-06-16T15:59:14+00:00"
+            "time": "2018-06-18T19:18:16+00:00"
         },
         {
             "name": "ForaDoEixo/redeninja",
@@ -3776,11 +3776,11 @@
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/sendgrid-email-delivery-simplified/",
-                "reference": "trunk"
+                "reference": "tags/1.11.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/sendgrid-email-delivery-simplified.zip?timestamp=1503913160",
+                "url": "https://downloads.wordpress.org/plugin/sendgrid-email-delivery-simplified.1.11.7.zip",
                 "reference": null,
                 "shasum": null
             },
