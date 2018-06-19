@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/foradoeixo/MapasBuilder.git",
-                "reference": "efd2bd9d2280ced54823006535477f572bca8c9c"
+                "reference": "aa8149882191568f22b0014e44c205f34e73fe0b"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -25,7 +25,7 @@
                 ]
             },
             "description": "Plugin WordPress que habilita um shortcode para buscar informações da API do **MapasCulturais**, e insere um módulo adicional ao Divi Builder, que permite configurar esse shortcode",
-            "time": "2018-06-18T19:18:16+00:00"
+            "time": "2018-06-19T21:06:17+00:00"
         },
         {
             "name": "ForaDoEixo/redeninja",
